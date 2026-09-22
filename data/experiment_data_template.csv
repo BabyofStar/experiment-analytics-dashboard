@@ -1,0 +1,5 @@
+experiment_id,workload,policy,cache_size_kb,run_id,instructions,cycles,accesses,misses,hits,ipc,mpki,miss_rate,hit_rate,execution_time_ms
+experiment_001,matrix,baseline,32,run_01,1000000,500000,200000,40000,160000,2.00,40.00,0.2000,0.8000,12.5
+experiment_001,matrix,baseline,32,run_02,1000000,505000,200000,41000,159000,1.98,41.00,0.2050,0.7950,12.8
+experiment_001,matrix,lru,32,run_01,1000000,470000,200000,30000,170000,2.13,30.00,0.1500,0.8500,11.4
+experiment_001,matrix,lru,32,run_02,1000000,475000,200000,30500,169500,2.11,30.50,0.1525,0.8475,11.6
