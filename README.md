@@ -17,6 +17,8 @@
 
 详细阅读记录见：[phase1_reading_notes.md](phase1_reading_notes.md)
 
+Phase 2–5 的实现记录见：[phase2_to_phase5_implementation_notes.md](phase2_to_phase5_implementation_notes.md)
+
 ## 当前可运行内容
 
 目前应用已经支持上传 CSV/XLSX 文件，或在未上传文件时自动使用 `data/sample_experiment.csv`。页面支持中文和 English 切换，会展示数据质量摘要，并支持按 workload、policy 和 cache size 筛选，计算核心 KPI、显示基础图表、汇总多次 run，并匹配 baseline 计算改进率。上传区域提供 [experiment_data_template.csv](data/experiment_data_template.csv) 下载按钮，方便使用者直接填写自己的数据；页面还支持下载筛选数据、run 汇总和 baseline 对比 CSV，保存当前分析快照到 SQLite，并显示最近保存记录。各分析模块均提供用途和指标方向说明。Streamlit 开发菜单已隐藏，因此 Deploy、Rerun 和 Clear cache 等功能不再显示；Print、Record screen 和主题选项仍属于框架工具栏。
@@ -82,6 +84,7 @@ experiment-analytics-dashboard/
 ├── requirements.txt               # 运行依赖
 ├── README.md                      # 项目说明
 ├── phase1_reading_notes.md        # Phase 1 参考项目阅读笔记
+├── phase2_to_phase5_implementation_notes.md # Phase 2–5 实现记录
 ├── data/
 │   ├── sample_experiment.csv      # Phase 2 示例实验数据
 │   └── experiment_data_template.csv # 可复制填写的数据模板
